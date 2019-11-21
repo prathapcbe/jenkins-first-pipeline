@@ -8,6 +8,7 @@ pipeline {
                 script {
                        def build = docker.build("test:latest",".")
                         build.push()
+                }
             }
         }
         stage('Test') {
